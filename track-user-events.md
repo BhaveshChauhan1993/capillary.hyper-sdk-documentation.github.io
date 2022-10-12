@@ -7,7 +7,8 @@ The SDK provides four event tracking APIs to log events for reporting User actio
 3. [User Update](README.md#user-update) 
 4. [Sign Out](README.md#sign-out) 
 
-There should be a unique id associated with each user whenever user signs in or signs up in the app. Sdk designates this identifier as cuid, it is strongly recommend providing this identifier as it will allow you to track your users across devices and platforms, improving the quality of your behavioral and demographic data
+There should be a unique id associated with each user whenever user signs in or signs up in the app. Sdk designates this identifier as cuid, it is strongly recommend providing this identifier as it will allow you to track your users across devices and platforms, improving the quality of your behavioral and demographic data.
+
 
 ## Sign In
 
