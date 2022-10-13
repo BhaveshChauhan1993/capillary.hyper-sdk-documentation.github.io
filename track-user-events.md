@@ -61,6 +61,9 @@ User update event is similar to the sign in event where **cuid** is required to 
 
 ## Sign Out
 
+### Android
+Sign out event can be logged by providing just the **cuid**. This will erase all the other basic info like firstName, mobile, etc. provided earlier in the session. 
+
 ```text
 fun pushUserSignOut(
         cuid: String
