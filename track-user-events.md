@@ -12,9 +12,6 @@ There should be a unique id associated with each user whenever user signs in or 
 
 ## Sign In
 
-<details><summary>Android</summary>
-<p>
-
 ```
 fun pushUserSignIn(
         cuid: String,
@@ -26,18 +23,8 @@ fun pushUserSignIn(
 
 ```
 
-</p>
-</details>
-
-<details><summary>IOS</summary>
-<p>
-</p>
-</details>
-
 ## Sign Up
 
-<details><summary>Android</summary>
-<p>
 
 ```text
 fun pushUserSignup(
@@ -50,18 +37,8 @@ fun pushUserSignup(
     )
 
 ```
-</p>
-</details>
-
-<details><summary>IOS</summary>
-<p>
-</p>
-</details>
 
 ## User Update
-
-<details><summary>Android</summary>
-<p>
 
 ```text
  fun pushUserUpdate(
@@ -75,18 +52,7 @@ fun pushUserSignup(
 
 ```
 
-</p>
-</details>
-
-<details><summary>IOS</summary>
-<p>
-</p>
-</details>
-
 ## Sign Out
-
-<details><summary>Android</summary>
-<p>
 
 ```text
 fun pushUserSignOut(
@@ -94,6 +60,3 @@ fun pushUserSignOut(
     )
 
 ```
-
-</p>
-</details>
