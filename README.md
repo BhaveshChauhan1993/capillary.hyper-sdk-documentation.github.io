@@ -4,7 +4,7 @@ This documentation covers the steps to integrate your mobile apps with Hydra Sdk
 
 # Installation
 
-The easiest way to use WebEngage in your Android project is with [Maven](https://maven.apache.org/). WebEngage Android SDK is hosted on `jcenter` Maven repository.
+The easiest way to use Hydra SDK in your Android project is with [Maven](https://maven.apache.org/). WebEngage Android SDK is hosted on `jcenter` Maven repository.
 
 Add dependencies of Hydra SDK in the `project/build.gradle` file.
 
@@ -21,7 +21,6 @@ Add dependencies of Hydra SDK in the `project/build.gradle` file.
  }
  ```
  
-
 # Initialization
 
 You need to create an instance of the sdk for each application, this api needs to be called in the onCreate() of the application class with the [Hydra Config](README.md#hydra-config)
