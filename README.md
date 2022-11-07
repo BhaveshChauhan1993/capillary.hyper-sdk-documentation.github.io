@@ -8,7 +8,7 @@ The easiest way to use Hydra sdk in your Android project is with [Maven](https:/
 
 Add `maven` in repositories of your project in the `project/build.gradle` file.
 
-```
+```kotlin
  repositories {
      ...
      maven {
@@ -22,7 +22,7 @@ Add `maven` in repositories of your project in the `project/build.gradle` file.
  ```   
  Add dependencies of **Hydra Sdk** along with **AndroidX Libraries** in the `app/build.gradle` file.
  
- ```
+ ```kotlin
  dependencies {
      // AndroidX libraries
      implementation("androidx.core:core:xxx")
@@ -38,7 +38,7 @@ Add `maven` in repositories of your project in the `project/build.gradle` file.
 
 You need to create an instance of the sdk for each application, this api needs to be called in the onCreate() of the application class with the [Hydra Config](README.md#hydra-config)
 
-```
+```kotlin
  fun instanceWithConfig(
             context: Context, config: HydraConfig
         ): HydraAPI
@@ -48,7 +48,7 @@ This api will create a unique instance of the HydraApi created by using the abov
 # Hydra Config
 For initializing the sdk we need to provide some configuration represented by HydraConfig in the sdk. Below are the possible parameters which are accepted by the sdk. User need to provide accountId, accountSecret, and orgId for initialization otherwise sdk will throw an exception, apart from these all the other parameter are optional. 
 
-```
+```kotlin
        var accountId: String,
        var accountSecret: String,
        var orgID: String,
@@ -64,20 +64,21 @@ For initializing the sdk we need to provide some configuration represented by Hy
 ```
 
 Once you have your accountId, accountSecret, and orgId with you, sdk initialization block can be added in the onCreate callback of your Application class as shown below.
-```
+```kotlin
 
 /**
 * Hydra Config requires accountId,accountSecret,orgID as a compulsory fields else Exception will be thrown.
-* @param accountId takes Account ID provided to client 
-* @param accountSecret takes Account Secret provided to client
-* @param orgID takes Organization ID provided to client
-* @param .debugLevel Takes Logging permission enabled from 4 types i.e. OFF(-1),INFO(0),DEBUG(1),VERBOSE(2).
-* @param .captureViewPortDetails Takes permission enabled/diabled to allow Viewport details of device.
-* @param .country Takes Country name
-* @param .city Takes City name
-* @param .countryCode Takes Country Code value
-* @param .baseURL Takes Base URL given to the client
-* @param .sslPublicKey Takes SSL Public Key given to the client
+* @param accountId [String] Account ID of partner
+* @param accountSecret[String] Account Secret of partner
+* @param orgID [String] Organization ID of partner
+
+* @param .debugLevel (Optional)[LogType] Logging Config i.e. OFF(-1),INFO(0),DEBUG(1),VERBOSE(2).
+* @param .captureViewPortDetails (Optional)[Boolean] Capture ViewPort information.
+* @param .country (Optional)[String] Country name
+* @param .city (Optional)[String] City name
+* @param .countryCode (Optional)[String] Country Code value
+* @param .baseURL (Optional)[String] Base URL of region 
+* @param .sslPublicKey (Optional)[String] Valid SSL Public Key of URL
 */
   
 val hydraConfig = HydraConfig.Builder(
