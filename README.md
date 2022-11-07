@@ -65,7 +65,7 @@ Once you have your accountId, accountSecret, and orgId with you, sdk initializat
 * @param accountSecret takes Account Secret provided to client
 * @param orgID takes Organization ID provided to client
 * @param .debugLevel Takes Logging permission enabled from 4 types i.e. OFF(-1),INFO(0),DEBUG(1),VERBOSE(2).
-* @param .captureViewPortDetails Takes permission to allow Viewport details of device.
+* @param .captureViewPortDetails Takes permission enabled/diabled to allow Viewport details of device.
 * @param .country Takes Country name
 * @param .city Takes City name
 * @param .countryCode Takes Country Code value
