@@ -17,12 +17,12 @@ Reporting a Sign In event requires **cuid** to be provided. Other basic informat
 ```kotlin
 /**
 * Track User Sign in event
-* @param cuid  customer id can be either of phone/email/externalId
-* @param firstName User first Name
-* @param lastName User Last Name
-* @param email Email address of the User
-* @param phone User mobile number
-* @param customData The attribute map which needs to be set for the user
+* @param cuid [String] customer id can be either of phone/email/externalId
+* @param firstName (Optional)[String] User first Name
+* @param lastName (Optional)[String] User Last Name
+* @param email (Optional)[String] Email address of the User
+* @param phone (Optional)[String] User mobile number
+* @param customData (Optional)[String] The attribute map which needs to be set for the user
 */
 fun pushUserSignIn(
         cuid: String,
