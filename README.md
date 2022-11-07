@@ -13,7 +13,7 @@ Add `mavenCentral()` in repositories of your project in the `project/build.gradl
      mavenCentral()
  }
  ```   
- Add dependencies of **Hydra sdk** along with **Androidx Libraries** in the `app/build.gradle` file.
+ Add dependencies of **Hydra Sdk** along with **AndroidX Libraries** in the `app/build.gradle` file.
  
  ```
  dependencies {
@@ -22,7 +22,7 @@ Add `mavenCentral()` in repositories of your project in the `project/build.gradl
      implementation("androidx.appcompat:appcompat:xxx")
      implementation("androidx.lifecycle:lifecycle-process:xxx")
      
-     // Hydra sdk
+     // Hydra Sdk
      implementation("com.capillary:hydra-android-sdk:xxx")
  }
  ```
@@ -58,13 +58,28 @@ For initializing the sdk we need to provide some configuration represented by Hy
 
 Once you have your accountId, accountSecret, and orgId with you, sdk initialization block can be added in the onCreate callback of your Application class as shown below.
 ```
+
+/**
+* Hydra Config requires accountId,accountSecret,orgID as a compulsory fields else Exception will be thrown.
+* @param accountId takes Account ID provided to client 
+* @param accountSecret takes Account Secret provided to client
+* @param orgID takes Organization ID provided to client
+* @param .debugLevel Takes Logging permission enabled from 4 types i.e. OFF(-1),INFO(0),DEBUG(1),VERBOSE(2).
+* @param .captureViewPortDetails Takes permission to allow Viewport details of device.
+* @param .country Takes Country name
+* @param .city Takes City name
+* @param .countryCode Takes Country Code value
+* @param .baseURL Takes Base URL given to the client
+* @param .sslPublicKey Takes SSL Public Key given to the client
+*/
+  
 val hydraConfig = HydraConfig.Builder(
             applicationContext,
             accountId = "YOUR_ACCOUNT_ID",
             accountSecret = "YOUR_ACCOUNT_SECRET",
             orgID = "YOUR_ORG_ID"
         )
-            .debugLevel(LogType.VERBOSE)
+            .debugLevel(LogType.VERBOSE) 
             .captureViewPortDetails(true)
             .country("India")
             .city("Punjab")
