@@ -64,8 +64,8 @@ fun pushUserSignup(
 ### Android
 User update event is similar to the sign in event where **cuid** is required to identify the user. You can add other custom data to update in the form of a Map with this api.
 
-```
-/**kotlin
+```kotlin
+/**
 * Track User update event
 * @param cuid  customer id can be either of phone/email/externalId
 * @param firstName User first Name
