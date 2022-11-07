@@ -17,12 +17,12 @@ Add `mavenCentral()` in repositories of your project in the `project/build.gradl
  
  ```
  dependencies {
-     > AndroidX libraries
+     ```AndroidX libraries```
      implementation("androidx.core:core:xxx")
      implementation("androidx.appcompat:appcompat:xxx")
      implementation("androidx.lifecycle:lifecycle-process:xxx")
      
-     > Hydra sdk
+     ```Hydra sdk```
      implementation("com.capillary:hydra-android-sdk:xxx")
  }
  ```
