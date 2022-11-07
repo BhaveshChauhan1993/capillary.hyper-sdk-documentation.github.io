@@ -67,7 +67,7 @@ Once you have your accountId, accountSecret, and orgId with you, sdk initializat
 ```kotlin
 
 /**
-* Hydra Config requires accountId,accountSecret,orgID as a compulsory fields else Exception will be thrown.
+* Hydra Config requires accountId, accountSecret, orgID as a compulsory fields else Exception will be thrown.
 * @param accountId [String] Account ID of partner
 * @param accountSecret[String] Account Secret of partner
 * @param orgID [String] Organization ID of partner
