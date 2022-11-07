@@ -69,7 +69,7 @@ Once you have your accountId, accountSecret, and orgId with you, sdk initializat
 /**
 * Hydra Config requires accountId, accountSecret, orgID as a compulsory fields else Exception will be thrown.
 * @param accountId [String] Account ID of partner
-* @param accountSecret[String] Account Secret of partner
+* @param accountSecret [String] Account Secret of partner
 * @param orgID [String] Organization ID of partner
 
 * @param .debugLevel (Optional)[LogType] Logging Config i.e. OFF(-1),INFO(0),DEBUG(1),VERBOSE(2).
