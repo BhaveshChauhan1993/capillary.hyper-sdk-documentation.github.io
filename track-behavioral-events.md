@@ -4,6 +4,11 @@ Behavioral events helps in capturing customer activities such as registration, f
 This API can be used to log such events.
 
 ```
+/**
+* Track user behaviour as events with attributes.
+* @param event_name - Event Name
+* @param attributes - The attribute map which needs to be set for the event
+*/
 fun pushEvent(
         event_name: String,
         attributes: Map<String, Any>
