@@ -6,17 +6,23 @@ This documentation covers the steps to integrate your mobile apps with Hydra Sdk
 
 The easiest way to use Hydra sdk in your Android project is with [Maven](https://maven.apache.org/). Hydra Android SDK is hosted on `jcenter` Maven repository.
 
-Add `mavenCentral()` in repositories of Hydra sdk in the `project/build.gradle` file.
+Add `mavenCentral()` in repositories of your project in the `project/build.gradle` file.
 
 ```
  repositories {
      mavenCentral()
  }
  ```   
- Add dependencies of Hydra sdk in the `app/build.gradle` file.
+ Add dependencies of **Hydra sdk** along with **Androidx Libraries** in the `app/build.gradle` file.
  
  ```
  dependencies {
+     > AndroidX libraries
+     implementation("androidx.core:core:xxx")
+     implementation("androidx.appcompat:appcompat:xxx")
+     implementation("androidx.lifecycle:lifecycle-process:xxx")
+     
+     > Hydra sdk
      implementation("com.capillary:hydra-android-sdk:xxx")
  }
  ```
