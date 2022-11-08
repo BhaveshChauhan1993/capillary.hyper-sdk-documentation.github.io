@@ -8,7 +8,7 @@ The easiest way to use Hydra sdk in your Android project is with [Maven](https:/
 
 Add `maven` in repositories of your project in the `project/build.gradle` file.
 
-```kotlin
+```gradle
  repositories {
      ..
      maven {
