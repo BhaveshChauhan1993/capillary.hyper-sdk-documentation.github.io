@@ -20,7 +20,7 @@ Add `maven` in repositories of your project in the `project/build.gradle` file.
      }
  }
 ```   
- Add `github.properties` file with below details to access maven repository of **Hydra Sdk**.
+ Add `github.properties` file with below details to access maven repository of **Hydra Sdk**.Where `USERNAME` and `TOKEN` are partner specific.
  
 ```kotlin
 username= "USERNAME"
