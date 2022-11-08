@@ -2,6 +2,11 @@
 
 This documentation covers the steps to integrate your mobile apps with Hydra Sdk. Installing the Hydra SDK will provide you with basic analytics functionality to engage your users. 
 
+# Requirements
+
+Minimum Android SDK version - 21
+Supported targetSdkVersion - 32
+
 # Installation
 
 The easiest way to use Hydra sdk in your Android project is with [Maven](https://maven.apache.org/). Hydra Android SDK is hosted on `jcenter` Maven repository.
