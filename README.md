@@ -10,7 +10,7 @@ Add `maven` in repositories of your project in the `project/build.gradle` file.
 
 ```kotlin
  repositories {
-     ...
+     ..
      maven {
          url "https://maven.pkg.github.com/Capillary/hydra-sdk-android-maven"
          credentials {
@@ -19,7 +19,14 @@ Add `maven` in repositories of your project in the `project/build.gradle` file.
          }
      }
  }
- ```   
+```   
+ Add `github.properties` file with below details to access maven repository of **Hydra Sdk**.
+ 
+```kotlin
+username= "USERNAME"
+token="TOKEN"
+```
+ 
  Add dependencies of **Hydra Sdk** along with **AndroidX Libraries** in the `app/build.gradle` file.
  
  ```kotlin
