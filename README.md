@@ -4,6 +4,10 @@ This documentation covers the steps to integrate your mobile apps with Hydra Sdk
 
 # Requirements
 
+- Minimum Android SDK version - 21
+- Supported targetSdkVersion - 32
+
+
 Minimum Android SDK version - 21
 Supported targetSdkVersion - 32
 
