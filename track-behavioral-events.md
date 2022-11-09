@@ -22,4 +22,9 @@ Example 1: User need the track of Page/Activity open event.
 hydraAPI.pushEvent("Page/Activity successfully opened")
 ```
 
+Example 2: User need the track of click event with some attributes.
+
+```kotlin
+hydraAPI.pushEvent("button Click",mapOf("Username" to "Henry", "Age" to "25", "Gender" to "Male"))
+````
 
