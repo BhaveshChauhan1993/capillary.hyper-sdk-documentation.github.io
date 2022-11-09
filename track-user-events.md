@@ -22,7 +22,7 @@ Reporting a Sign In event requires **cuid** to be provided. Other basic informat
 * @param lastName (Optional)[String] User Last Name
 * @param email (Optional)[String] Email address of the User
 * @param phone (Optional)[String] User mobile number
-* @param customData (Optional)[String] The attribute map which needs to be set for the user
+* @param customData (Optional)[Map] The attribute map which needs to be set for the user
 */
 fun pushUserSignIn(
         cuid: String,
@@ -47,7 +47,7 @@ To report a User Sign Up event **cuid** with other basic form info needs to be p
 * @param lastName [String] User Last Name
 * @param email [String] Email address of the User
 * @param phone [String] User mobile number
-* @param customData (Optional)[String] The attribute map which needs to be set for the user
+* @param customData (Optional)[Map] The attribute map which needs to be set for the user
 */
 fun pushUserSignup(
         cuid: String,
@@ -72,7 +72,7 @@ User update event is similar to the sign in event where **cuid** is required to 
 * @param lastName (Optional)[String] User Last Name
 * @param email (Optional)[String] Email address of the User
 * @param phone (Optional)[String] User mobile number
-* @param customData (Optional)[String] The attribute map which needs to be set for the user
+* @param customData (Optional)[Map] The attribute map which needs to be set for the user
 */
  fun pushUserUpdate(
         cuid: String,
