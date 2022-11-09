@@ -15,3 +15,11 @@ fun pushEvent(
     )
 
 ```
+
+Example 1: User need the track of Page/Activity open event.
+
+```kotlin
+hydraAPI.pushEvent("Page/Activity successfully opened")
+```
+
+
