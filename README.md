@@ -58,12 +58,10 @@ You need to create an instance of the sdk for each application, this api needs t
 This api will create a unique instance of the HydraApi created by using the above api can then be retrieved in your code 
 
 # Hydra Config
-For initializing the sdk we need to provide some configuration represented by HydraConfig in the sdk. Below are the possible parameters which are accepted by the sdk. User need to provide accountId, accountSecret, and orgId for initialization otherwise sdk will throw an exception, apart from these all the other parameter are optional. 
+For initializing the sdk we need to provide some configuration represented by HydraConfig in the sdk. Below are the possible parameters which are accepted by the sdk. User need to provide accountIdfor initialization otherwise sdk will throw an exception, apart from these all the other parameter are optional. 
 
 ```kotlin
        var accountId: String,
-       var accountSecret: String,
-       var orgID: String,
        var baseURL: String?,
        var sslPublicKey: String?,
        var country: String?,
@@ -75,14 +73,12 @@ For initializing the sdk we need to provide some configuration represented by Hy
        var fcmSenderId: String? = null,
 ```
 
-Once you have your accountId, accountSecret, and orgId with you, sdk initialization block can be added in the onCreate callback of your Application class as shown below.
+Once you have your accountId with you, sdk initialization block can be added in the onCreate callback of your Application class as shown below.
 ```kotlin
 
 /**
-* Hydra Config requires accountId, accountSecret, orgID as a compulsory fields else Exception will be thrown.
+* Hydra Config requires accountId as a compulsory field else Exception will be thrown.
 * @param accountId [String] Account ID of partner
-* @param accountSecret [String] Account Secret of partner
-* @param orgID [String] Organization ID of partner
 
 * @param .debugLevel (Optional)[LogType] Logging Config i.e. OFF(-1),INFO(0),DEBUG(1),VERBOSE(2).
 * @param .captureViewPortDetails (Optional)[Boolean] Capture ViewPort information.
@@ -95,10 +91,8 @@ Once you have your accountId, accountSecret, and orgId with you, sdk initializat
   
 val hydraConfig = HydraConfig.Builder(
             applicationContext,
-            accountId = "YOUR_ACCOUNT_ID",
-            accountSecret = "YOUR_ACCOUNT_SECRET",
-            orgID = "YOUR_ORG_ID"
-        )
+            accountId = "YOUR_ACCOUNT_ID"
+            )
             .debugLevel(LogType.VERBOSE) 
             .captureViewPortDetails(true)
             .country("India")
