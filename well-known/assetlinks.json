@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.hydra.sdk.example",
+    "sha256_cert_fingerprints":
+    ["39:3D:5A:AE:48:A3:18:B1:DA:60:B4:51:8E:C3:93:D5:02:70:BE:79:92:2E:82:31:D0:B5:73:BC:DD:0C:3F:AD"]
+  }
+}]
